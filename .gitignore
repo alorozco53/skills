@@ -1,0 +1,46 @@
+# Bundled Codex system skills, not part of custom public skills.
+.system/
+
+# Local editor and OS files.
+*~
+.DS_Store
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# Python/cache artifacts from helper scripts or validation runs.
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Local environments and dependency folders.
+.venv/
+venv/
+env/
+node_modules/
+
+# Secrets and machine-local config. Keep examples publishable.
+.env
+.env.*
+!.env.example
+!.env.*.example
+.netrc
+.npmrc
+.pypirc
+*.pem
+*.key
+*.p12
+*.pfx
+
+# Logs and generated run artifacts.
+*.log
+*.out
+*.err
+logs/
+tmp/
+temp/
+dist/
+build/

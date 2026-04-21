@@ -1,0 +1,4 @@
+interface:
+  display_name: "Scientific PM Git Coach"
+  short_description: "Safe, collaborative Git commit coaching"
+  default_prompt: "Use $spm-git-coach to review my changes, propose commit batches, and guide safe commit creation without pushing."

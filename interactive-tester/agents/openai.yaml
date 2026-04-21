@@ -1,0 +1,4 @@
+interface:
+  display_name: "Interactive Tester"
+  short_description: "Negotiate scope and run layered test plans"
+  default_prompt: "Use $interactive-tester to define testing scope and run the right test layers for this change."
