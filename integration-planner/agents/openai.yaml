@@ -1,0 +1,4 @@
+interface:
+  display_name: "Integration Planner"
+  short_description: "Plan the simplest transparent way to integrate something into a project"
+  default_prompt: "Use $integration-planner to analyze the target project, compare any relevant references, and recommend the simplest viable integration path with explicit tradeoffs and minimal unnecessary complexity."
