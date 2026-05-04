@@ -1,0 +1,4 @@
+interface:
+  display_name: "Method Replayer"
+  short_description: "Create interactive replay notebooks for codepath audits"
+  default_prompt: "Use $method-replayer to turn this codepath or result into a user-runnable notebook that traces the method step by step with markdown links back to source."
