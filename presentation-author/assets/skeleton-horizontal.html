@@ -1,0 +1,91 @@
+---
+layout: reveal
+title: "PLACEHOLDER — Talk Title"
+subtitle: "PLACEHOLDER — One-sentence subtitle"
+presenter: "PLACEHOLDER — Your name, venue, date"
+reveal:
+  theme: night
+  transition: slide
+  backgroundTransition: fade
+  controls: true
+  progress: true
+  history: true
+  center: true
+
+  menu: true
+  menu_config:
+    side: left
+    transitions: true
+    openButton: true
+
+  chalkboard: true
+  chalkboard_config:
+    theme: chalkboard
+    toggleChalkboardButton: true
+    toggleNotesButton: true
+
+  # Set math: true only if the deck contains LaTeX equations.
+  math: false
+
+  markdown: true
+  highlight: true
+  zoom: true
+  notes: true
+
+  home_link: true
+  home_url: '/'
+  home_label: 'Back to Home'
+  links:
+    - label: 'Paper'
+      url: 'https://example.org/paper'
+    - label: 'Code'
+      url: 'https://github.com/example/repo'
+---
+
+<!-- 1. Title slide ------------------------------------------------- -->
+<section data-transition="fade"
+         data-background-color="#03040f"
+         data-menu-title="Title">
+  <div class="title-card">
+    <h1>PLACEHOLDER — Talk Title</h1>
+    <h3>PLACEHOLDER — Subtitle</h3>
+    <p class="attribution">PLACEHOLDER — Your name, venue, date</p>
+  </div>
+</section>
+
+<!-- 2. First point ------------------------------------------------- -->
+<section data-background-color="#050816">
+  <h2>PLACEHOLDER — first point</h2>
+  <ul>
+    <li class="fragment">First bullet.</li>
+    <li class="fragment">Second bullet.</li>
+    <li class="fragment">Third bullet.</li>
+  </ul>
+</section>
+
+<!-- 3. Add as many flat slides as needed --------------------------- -->
+<section data-background-color="#071323">
+  <h2>PLACEHOLDER — second point</h2>
+  <p>Body content.</p>
+</section>
+
+<!-- N. Closing ----------------------------------------------------- -->
+<section data-background-color="#0a1428" data-transition="concave">
+  <h2>Wrap up</h2>
+  <p>PLACEHOLDER — one-sentence takeaway.</p>
+</section>
+
+<style>
+  .title-card {
+    padding: 1.5rem 1.8rem;
+    border-radius: 14px;
+    background: rgba(8, 14, 32, 0.55);
+    border: 1px solid rgba(120, 180, 255, 0.35);
+    backdrop-filter: blur(4px);
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .title-card h1 { font-size: 2.4em; line-height: 1.08; margin-bottom: 0.3em; }
+  .title-card h3 { color: #b6cdf0; font-weight: 400; margin-bottom: 0.7em; }
+  .attribution { color: #8fa6c7; font-size: 0.85em; margin: 0; }
+</style>

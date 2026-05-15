@@ -1,0 +1,240 @@
+---
+layout: reveal
+title: "PLACEHOLDER — Paper Title"
+subtitle: "PLACEHOLDER — One-sentence framing"
+presenter: "PLACEHOLDER — Your name, venue, date"
+reveal:
+  theme: night
+  transition: slide
+  backgroundTransition: fade
+  controls: true
+  progress: true
+  history: true
+  center: false
+
+  menu: true
+  menu_config:
+    side: left
+    transitions: true
+    openButton: true
+
+  chalkboard: true
+  chalkboard_config:
+    theme: chalkboard
+    toggleChalkboardButton: true
+    toggleNotesButton: true
+
+  math: true
+  math_config:
+    mathjax: 'https://cdn.mathjax.org/mathjax/latest/MathJax.js'
+    config: 'TeX-AMS_HTML-full'
+
+  markdown: true
+  highlight: true
+  zoom: true
+  notes: true
+
+  home_link: true
+  home_url: '/'
+  home_label: 'Back to Home'
+  links:
+    - label: 'arXiv'
+      url: 'https://arxiv.org/abs/0000.00000'
+    - label: 'PDF'
+      url: 'https://arxiv.org/pdf/0000.00000'
+    - label: 'Code'
+      url: 'https://github.com/example/repo'
+
+  extend:
+    width: 1366
+    height: 768
+    margin: 0.05
+    minScale: 0.2
+    maxScale: 1.35
+---
+
+<!-- =================================================================
+     Column 0 — Cover
+     ================================================================= -->
+<section>
+  <section data-transition="fade"
+           data-background-color="#03040f"
+           data-menu-title="Title">
+    <div class="title-card">
+      <h1>PLACEHOLDER &mdash; Paper Title</h1>
+      <h3>PLACEHOLDER &mdash; One-sentence framing</h3>
+      <p class="attribution">PLACEHOLDER &mdash; Your name, venue, date</p>
+    </div>
+  </section>
+
+  <section data-background-color="#050816" data-menu-title="Outline">
+    <h2>Outline</h2>
+    <ol>
+      <li class="fragment">Motivation &amp; problem framing</li>
+      <li class="fragment">Method</li>
+      <li class="fragment">Evidence</li>
+      <li class="fragment">Conclusions</li>
+    </ol>
+  </section>
+</section>
+
+<!-- =================================================================
+     Column 1 — Intro (teal scale)
+     ================================================================= -->
+<section>
+  <section class="column-title centered intro-teal-title"
+           data-background-color="#0e3a4a"
+           data-transition="fade"
+           data-menu-title="Intro & Motivation">
+    <h1>Intro &amp; Motivation</h1>
+    <h2>PLACEHOLDER &mdash; subhead</h2>
+  </section>
+
+  <section class="intro-teal" data-background-color="#114455">
+    <h2>PLACEHOLDER &mdash; the pressure</h2>
+    <div class="two-col">
+      <div class="card">
+        <h3>Current state</h3>
+        <ul><li>PLACEHOLDER</li></ul>
+      </div>
+      <div class="card">
+        <h3>What we want</h3>
+        <ul><li>PLACEHOLDER</li></ul>
+      </div>
+    </div>
+  </section>
+</section>
+
+<!-- =================================================================
+     Column 2 — Method (deep blue scale)
+     ================================================================= -->
+<section>
+  <section class="column-title centered method-blue-title"
+           data-background-color="#14274a"
+           data-transition="fade"
+           data-menu-title="Method">
+    <h1>Method</h1>
+    <h2>PLACEHOLDER &mdash; mechanism in one column</h2>
+  </section>
+
+  <section class="method-blue" data-background-color="#1a3565">
+    <h2>Setup</h2>
+    <p class="equation">$$\theta^* = \arg\min_\theta \mathbb{E}_{(x,y)\sim\mathcal{D}}\big[\ell(f_\theta(x), y)\big] + \lambda \Omega(\theta)$$</p>
+  </section>
+</section>
+
+<!-- =================================================================
+     Column 3 — Evidence (gold scale)
+     ================================================================= -->
+<section>
+  <section class="column-title centered evidence-gold-title"
+           data-background-color="#f0c847"
+           data-transition="fade"
+           data-menu-title="Evidence">
+    <h1>Evidence</h1>
+    <h2>PLACEHOLDER &mdash; experiments and results</h2>
+  </section>
+
+  <section class="evidence-gold" data-background-color="#f6d86d">
+    <h2>Headline numbers</h2>
+    <table class="results-table">
+      <thead><tr><th>Setting</th><th>Baseline</th><th>Ours</th><th>&Delta;</th></tr></thead>
+      <tbody>
+        <tr><td>PLACEHOLDER</td><td>0.62</td><td><strong>0.71</strong></td><td>+0.09</td></tr>
+      </tbody>
+    </table>
+  </section>
+</section>
+
+<!-- =================================================================
+     Column 4 — Conclusions (purple scale)
+     ================================================================= -->
+<section>
+  <section class="column-title centered closing-purple-title"
+           data-background-color="#4e2f82"
+           data-transition="fade"
+           data-menu-title="Conclusions">
+    <h1>Conclusions</h1>
+    <h2>PLACEHOLDER &mdash; what it means</h2>
+  </section>
+
+  <section class="closing-purple" data-background-color="#5a3695">
+    <h2>Takeaways</h2>
+    <ol>
+      <li class="fragment">PLACEHOLDER &mdash; concrete claim.</li>
+      <li class="fragment">PLACEHOLDER &mdash; mechanism.</li>
+      <li class="fragment">PLACEHOLDER &mdash; cost / tradeoff.</li>
+    </ol>
+  </section>
+</section>
+
+<style>
+  .reveal .slides section { text-align: left; padding: 0.5rem 1.2rem; }
+  .reveal .slides section.centered { text-align: center; }
+
+  .title-card {
+    padding: 1.6rem 1.9rem;
+    border-radius: 14px;
+    background: rgba(8, 14, 32, 0.55);
+    border: 1px solid rgba(120, 180, 255, 0.35);
+    backdrop-filter: blur(4px);
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .title-card h1 { font-size: 2.6em; line-height: 1.08; margin-bottom: 0.3em; }
+  .title-card h3 { color: #b6cdf0; font-weight: 400; margin-bottom: 0.7em; }
+  .attribution { color: #8fa6c7; font-size: 0.85em; margin: 0; }
+
+  .column-title h1,
+  .column-title h2 { margin: 0 auto; max-width: 980px; }
+
+  .two-col {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 1rem;
+  }
+  .card {
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    background: rgba(0, 0, 0, 0.18);
+    padding: 0.75rem 0.9rem;
+  }
+
+  .equation {
+    background: rgba(160, 210, 255, 0.1);
+    border-radius: 8px;
+    padding: 0.5rem 0.8rem;
+    margin: 0.6rem auto;
+    max-width: 980px;
+    overflow-wrap: anywhere;
+  }
+
+  .results-table { width: 100%; max-width: 980px; margin: 0.5rem auto; border-collapse: collapse; }
+  .results-table th, .results-table td { border: 1px solid rgba(80, 50, 5, 0.4); padding: 0.45rem 0.6rem; text-align: left; }
+  .results-table th { background: rgba(80, 50, 5, 0.18); }
+
+  /* Intro (teal) */
+  .intro-teal-title h1, .intro-teal-title h2 { color: #d6f4ff !important; }
+  .intro-teal h2, .intro-teal h3, .intro-teal p, .intro-teal li { color: #e7fbff !important; }
+  .intro-teal .card { background: rgba(6, 30, 40, 0.55); border-color: rgba(120, 215, 240, 0.4); }
+
+  /* Method (blue) */
+  .method-blue-title h1, .method-blue-title h2 { color: #e2ecff !important; }
+  .method-blue h2, .method-blue h3, .method-blue p, .method-blue li { color: #e8efff !important; }
+  .method-blue .card { background: rgba(18, 36, 74, 0.6); border-color: rgba(157, 196, 255, 0.42); }
+  .method-blue .equation { background: rgba(196, 218, 255, 0.16); }
+
+  /* Evidence (gold — light bg, dark text) */
+  .evidence-gold-title h1, .evidence-gold-title h2 { color: #3f2d04 !important; }
+  .evidence-gold, .evidence-gold h2, .evidence-gold h3,
+  .evidence-gold p, .evidence-gold li, .evidence-gold td, .evidence-gold th { color: #261a02 !important; }
+
+  /* Conclusions (purple) */
+  .closing-purple-title h1, .closing-purple-title h2 { color: #f3e8ff !important; }
+  .closing-purple, .closing-purple h2, .closing-purple h3,
+  .closing-purple p, .closing-purple li { color: #f3e8ff !important; }
+
+  @media (max-width: 1000px) {
+    .two-col { grid-template-columns: 1fr; }
+  }
+</style>

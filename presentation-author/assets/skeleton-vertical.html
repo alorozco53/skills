@@ -1,0 +1,135 @@
+---
+layout: reveal
+title: "PLACEHOLDER — Talk Title"
+subtitle: "PLACEHOLDER — One-sentence subtitle"
+presenter: "PLACEHOLDER — Your name, venue, date"
+reveal:
+  theme: night
+  transition: slide
+  backgroundTransition: fade
+  controls: true
+  progress: true
+  history: true
+  center: true
+
+  menu: true
+  menu_config:
+    side: left
+    transitions: true
+    openButton: true
+
+  chalkboard: true
+  chalkboard_config:
+    theme: chalkboard
+    toggleChalkboardButton: true
+    toggleNotesButton: true
+
+  math: false
+
+  markdown: true
+  highlight: true
+  zoom: true
+  notes: true
+
+  home_link: true
+  home_url: '/'
+  home_label: 'Back to Home'
+  links:
+    - label: 'Paper'
+      url: 'https://example.org/paper'
+    - label: 'Code'
+      url: 'https://github.com/example/repo'
+---
+
+<!-- =================================================================
+     Column 1 — one topic with stacked vertical subslides.
+     Press DOWN inside this column to drill into details.
+     Press RIGHT (from anywhere) to advance to Column 2.
+     ================================================================= -->
+<section>
+  <section data-transition="fade"
+           data-background-color="#03040f"
+           data-menu-title="Title">
+    <div class="title-card">
+      <h1>PLACEHOLDER — Title</h1>
+      <h3>PLACEHOLDER — Subtitle</h3>
+      <p class="attribution">PLACEHOLDER — Your name, venue, date</p>
+    </div>
+    <p class="hint">Press <strong>&darr;</strong> to drill &middot; <strong>&rarr;</strong> to skip</p>
+  </section>
+
+  <section data-background-color="#050816" data-menu-title="Setup">
+    <h2>PLACEHOLDER — setup / motivation</h2>
+    <ul>
+      <li class="fragment">Setup bullet 1.</li>
+      <li class="fragment">Setup bullet 2.</li>
+    </ul>
+  </section>
+
+  <section data-background-color="#071323"
+           data-auto-animate
+           data-menu-title="Detail v1">
+    <h2>PLACEHOLDER — drilldown</h2>
+    <p data-id="thought">First level of detail.</p>
+  </section>
+
+  <section data-background-color="#08182e"
+           data-auto-animate
+           data-menu-title="Detail v2">
+    <h2>PLACEHOLDER — drilldown</h2>
+    <p data-id="thought">First level of detail &mdash; <strong>extended</strong>.</p>
+  </section>
+
+  <section data-background-color="#0c2a52"
+           data-transition="convex"
+           data-menu-title="Takeaway">
+    <h2>Takeaway</h2>
+    <blockquote class="callout">
+      PLACEHOLDER &mdash; the punchline of this column.
+    </blockquote>
+  </section>
+</section>
+
+<!-- Column 2 — optional second topic ---------------------------- -->
+<section>
+  <section data-transition="fade" data-background-color="#102542" data-menu-title="Next topic">
+    <h2>PLACEHOLDER &mdash; next topic</h2>
+    <p>Press <strong>&rarr;</strong> to enter a fresh column.</p>
+  </section>
+
+  <section data-background-color="#143559" data-menu-title="Optional aside">
+    <h3>PLACEHOLDER &mdash; optional aside</h3>
+    <p>Content the audience can skip.</p>
+  </section>
+</section>
+
+<!-- Closing column ---------------------------------------------- -->
+<section data-background-color="#0a1428" data-transition="concave" data-menu-title="Closing">
+  <h2>Wrap up</h2>
+  <p>PLACEHOLDER &mdash; one-sentence takeaway.</p>
+</section>
+
+<style>
+  .title-card {
+    padding: 1.5rem 1.8rem;
+    border-radius: 14px;
+    background: rgba(8, 14, 32, 0.55);
+    border: 1px solid rgba(120, 180, 255, 0.35);
+    backdrop-filter: blur(4px);
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  .title-card h1 { font-size: 2.4em; line-height: 1.08; margin-bottom: 0.3em; }
+  .title-card h3 { color: #b6cdf0; font-weight: 400; margin-bottom: 0.7em; }
+  .attribution { color: #8fa6c7; font-size: 0.85em; margin: 0; }
+  .hint { margin-top: 1.4rem; color: #c1d4ec; font-size: 0.85em; }
+  .callout {
+    border-left: 4px solid #5ad1c8;
+    background: rgba(90, 209, 200, 0.08);
+    padding: 0.9rem 1.1rem;
+    margin: 0.6rem auto;
+    max-width: 820px;
+    text-align: left;
+    font-style: italic;
+  }
+</style>
