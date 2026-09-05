@@ -1,0 +1,4 @@
+interface:
+  display_name: "Execution Frontier Status"
+  short_description: "Show causal project status and the active execution frontier"
+  default_prompt: "Use $execution-frontier-status to show where this work stands, what is running or waiting, and what currently gates the deliverable."
