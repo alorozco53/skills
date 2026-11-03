@@ -1,0 +1,4 @@
+interface:
+  display_name: "Deploy Reveal Presentation"
+  short_description: "Build and privately deploy existing Reveal.js decks"
+  default_prompt: "Use $deploy-reveal-presentation to deploy my selected Reveal.js deck privately, preserving its notes, styling, and plugins."
