@@ -1,0 +1,6 @@
+{
+  "repository": "https://github.com/aumona/poster-harness.git",
+  "commit": "3e6ca77da6760db4649e83300d0366dc56ed1203",
+  "template_dir": "~/Projects/poster-harness",
+  "posters_dir": "~/Projects/presentations/posters"
+}
